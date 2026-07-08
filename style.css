@@ -161,4 +161,21 @@ opacity:.25;
 z-index:-1;
 border-radius:50%;
 }
+@media (max-width:768px){
+
+.nav-links.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:80px;
+right:20px;
+background:#181828;
+padding:20px;
+border-radius:15px;
+gap:20px;
+width:200px;
+box-shadow:0 0 20px rgba(138,43,226,.5);
+}
+
+}
 
