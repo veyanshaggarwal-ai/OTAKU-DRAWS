@@ -96,4 +96,69 @@ body{
     transform:translateY(-5px);
     box-shadow:0 0 35px #b86cff;
 }
+/* ===== Responsive ===== */
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+.navbar{
+    padding:18px 6%;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+}
+
+/* ===== Animation ===== */
+
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(50px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===== Glow Effect ===== */
+
+.hero::after{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:#8a2be2;
+filter:blur(170px);
+opacity:.25;
+z-index:-1;
+border-radius:50%;
+}
 
