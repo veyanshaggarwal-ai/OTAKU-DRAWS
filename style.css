@@ -1,1 +1,99 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d18;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#b86cff;
+    text-shadow:0 0 20px #8a2be2;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b86cff;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+    background:
+    linear-gradient(rgba(8,8,20,.7),rgba(8,8,20,.7)),
+    radial-gradient(circle at top,#5e2eff 0%,#0d0d18 70%);
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#8a2be2;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    box-shadow:0 0 20px #8a2be2;
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 35px #b86cff;
+}
 
